@@ -47,7 +47,8 @@ public class PersistentInterval implements CompositeUserType {
 		throw new UnsupportedOperationException("Interval is immutable");
 	}
 
-	@Override
+	@SuppressWarnings("rawtypes")
+    @Override
 	public Class returnedClass() {
 		return Interval.class;
 	}
